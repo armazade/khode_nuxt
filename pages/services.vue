@@ -15,7 +15,7 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Services - YourCompany',
+  title: 'Services - Khode',
   description: 'Comprehensive digital solutions including web development, mobile apps, and branding.',
 })
 </script>

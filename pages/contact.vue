@@ -22,7 +22,7 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Contact Us - YourCompany',
+  title: 'Contact Us - Khode',
   description: 'Get in touch with us to discuss your next digital project.',
 })
 </script>

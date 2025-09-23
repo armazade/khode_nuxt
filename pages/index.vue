@@ -36,50 +36,6 @@
       </div>
     </section>
 
-    <!-- Services Preview -->
-    <section class="py-24 bg-white">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">What We Do</h2>
-          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-            We specialize in creating digital solutions that make your business stand out
-          </p>
-        </div>
-        
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="text-center p-8 border border-gray-100 rounded-2xl hover:shadow-lg transition-shadow">
-            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">Web Development</h3>
-            <p class="text-gray-600">Modern, responsive applications built with the latest technologies</p>
-          </div>
-          
-          <div class="text-center p-8 border border-gray-100 rounded-2xl hover:shadow-lg transition-shadow">
-            <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-              <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">Mobile Apps</h3>
-            <p class="text-gray-600">Native and cross-platform mobile applications</p>
-          </div>
-          
-          <div class="text-center p-8 border border-gray-100 rounded-2xl hover:shadow-lg transition-shadow">
-            <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-              <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">Brand Identity</h3>
-            <p class="text-gray-600">Complete branding solutions from logo to digital presence</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- CTA Section -->
     <section class="py-24 bg-gray-900">
       <div class="max-w-4xl mx-auto px-6 text-center">
@@ -102,9 +58,9 @@
 
 <script setup>
 useSeoMeta({
-  title: 'YourCompany - Digital Solutions',
-  ogTitle: 'YourCompany - Digital Solutions',
-  description: 'Strengthen your brand with memorable digital experiences tuned to your unique identity.',
-  ogDescription: 'Strengthen your brand with memorable digital experiences tuned to your unique identity.',
+  title: 'Khode - Digital Solutions',
+  ogTitle: 'Khode - Digital Solutions',
+  description: 'Strengthen your company with powerful solutions.',
+  ogDescription: 'Strengthen your company with powerful solutions.',
 })
 </script>
