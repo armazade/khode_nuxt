@@ -58,8 +58,8 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Khode - Digital Solutions',
-  ogTitle: 'Khode - Digital Solutions',
+  title: 'Khode',
+  ogTitle: 'Khode',
   description: 'Strengthen your company with powerful solutions.',
   ogDescription: 'Strengthen your company with powerful solutions.',
 })
