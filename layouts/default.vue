@@ -23,7 +23,7 @@
     <footer class="bg-gray-50 border-t border-gray-100">
       <div class="max-w-6xl mx-auto px-6 py-12">
         <div class="text-center text-gray-600">
-          <p>&copy; 2025 YourCompany. All rights reserved.</p>
+          <p>&copy; 2025 Khode. All rights reserved.</p>
         </div>
       </div>
     </footer>
