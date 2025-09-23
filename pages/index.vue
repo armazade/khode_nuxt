@@ -302,6 +302,12 @@ useSeoMeta({
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .wave, .pulse-glow, .highlight {
+    animation: none;
+  }
+}
+
 .highlight {
   color: #c4b5fd;
   text-shadow: 0 0 30px rgba(147, 51, 234, 0.6);
