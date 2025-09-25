@@ -32,6 +32,61 @@
       </div>
     </section>
 
+    <!-- Services Section -->
+    <section class="services-section">
+      <div class="services-content">
+        <h2 class="services-title">
+          Efficiency Solutions for Modern Businesses
+        </h2>
+        <p class="services-description">
+          Automate manual processes and streamline operations with our comprehensive digital solutions
+        </p>
+
+        <div class="services-grid">
+          <!-- Web Applications -->
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M7 9L17 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="9" cy="6" r="1" fill="currentColor"/>
+                <circle cx="7" cy="6" r="1" fill="currentColor"/>
+                <circle cx="11" cy="6" r="1" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Web Applications</h3>
+            <p class="service-description">Custom web applications that streamline your business processes and improve team collaboration</p>
+          </div>
+
+          <!-- Automation Systems -->
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 3V7M12 17V21M4.22 4.22L6.34 6.34M17.66 17.66L19.78 19.78M1 12H5M19 12H23M4.22 19.78L6.34 17.66M17.66 6.34L19.78 4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Process Automation</h3>
+            <p class="service-description">Eliminate repetitive tasks with intelligent automation systems that save time and reduce errors</p>
+          </div>
+
+          <!-- Professional Websites -->
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 8H16M8 12H12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="6" cy="8" r="1" fill="currentColor"/>
+                <circle cx="6" cy="12" r="1" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Professional Websites</h3>
+            <p class="service-description">Modern, responsive websites that enhance your online presence and drive business growth</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="cta-content">
@@ -41,12 +96,11 @@
         <p class="cta-description">
           Let's discuss your project and see how we can help bring your vision to life.
         </p>
-        <NuxtLink
-            to="/contact"
-            class="cta-button"
-        >
-          Start Your Project
-        </NuxtLink>
+        <div class="services-cta">
+          <NuxtLink to="/contact" class="services-button">
+            Transform Your Business
+          </NuxtLink>
+        </div>
       </div>
     </section>
   </div>
@@ -363,21 +417,183 @@ useSeoMeta({
   margin-bottom: 2rem;
 }
 
-.cta-button {
+.services-section {
+  padding: 6rem 0 8rem;
+  background: linear-gradient(180deg, #000 0%, #0a0a0a 100%);
+  position: relative;
+}
+
+.services-content {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.services-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .services-title {
+    font-size: 3rem;
+  }
+}
+
+.services-description {
+  font-size: 1.25rem;
+  color: #d1d5db;
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service-card {
+  background: rgba(55, 65, 81, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(147, 51, 234, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(147, 51, 234, 0.05) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(147, 51, 234, 0.3);
+  box-shadow: 0 20px 40px rgba(147, 51, 234, 0.1);
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+.service-icon {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1.5rem;
+  color: #c4b5fd;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.service-card:hover .service-icon {
+  color: #a855f7;
+  transform: scale(1.1);
+}
+
+.service-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.service-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #9ca3af;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+.services-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.services-button {
   display: inline-block;
-  background: white;
-  color: #111827;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
+  background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 0.75rem;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(147, 51, 234, 0.3);
+  position: relative;
+  overflow: hidden;
 }
 
-.cta-button:hover {
-  background: #f3f4f6;
+.services-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.services-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 25px rgba(147, 51, 234, 0.4);
+}
+
+.services-button:hover::before {
+  left: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-card,
+  .services-button,
+  .service-icon {
+    transition: none;
+    transform: none;
+  }
+
+  .service-card:hover,
+  .services-button:hover {
+    transform: none;
+  }
 }
 </style>
