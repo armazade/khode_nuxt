@@ -91,7 +91,7 @@
     <section class="cta-section">
       <div class="cta-content">
         <h2 class="cta-title">
-          Ready to transform your digital presence?
+          Ready for powerful solutions?
         </h2>
         <p class="cta-description">
           Let's discuss your project and see how we can help bring your vision to life.
